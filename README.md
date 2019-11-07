@@ -40,11 +40,12 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|integer|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :groups_users
 - has_many :users, through: :groups_users
+- has_many :posts
 
 
 ## groups_usersテーブル
@@ -63,10 +64,12 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|id|integer|null: false|
-|text|text|null: false|
-|image|string|null: false|
+|id|integer|
+|text|text|
+|image|string|
 |user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
+  belongs_to :groups
