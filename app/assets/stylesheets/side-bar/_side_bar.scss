@@ -1,0 +1,13 @@
+.side-bar {
+  width: 300px;
+  color: white;
+  float: left;
+}
+
+a {
+  color: white;
+  margin-left: 0.3rem;
+}
+
+@import "./side-header";
+@import "./side-groups";
