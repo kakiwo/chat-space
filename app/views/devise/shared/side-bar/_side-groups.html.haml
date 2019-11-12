@@ -1,9 +1,8 @@
 .side-groups
-  =link_to "#", class: "side-groups__group" do
+  - current_user.groups.each do |group|
     .side-groups__group
-      %p.side-groups__group--group-name sample
-      %p.side-groups__group--latest-message aaaaaaa
-  =link_to "#", class: "side-groups__group" do
-    .side-groups__group
-      %p.side-groups__group--group-name sample2
-      %p.side-groups__group--latest-message aaaaaaa
+      = link_to '#', class: "side-groups__group" do
+        .side-groups__group--group-name
+          = group.name
+        .side-groups__group--latest-message
+          メッセージはまだありません。
