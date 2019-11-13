@@ -1,4 +1,5 @@
 .main-chat
   = render "./messages/main-chat/main-header"
-  = render "./messages/main-chat/messages"
+  .messages
+    = render "./messages/main-chat/message", collection:@messages
   = render "./messages/main-chat/form"
