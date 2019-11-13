@@ -2,9 +2,6 @@
   height: 50px;
   padding: 20px 40px;
   background-color: #ddd;
-
-  &__new-message {
-    display: flex;
   
     &__input-box {
       position: relative;
@@ -41,4 +38,7 @@
       cursor: pointer;
     }
   }
+
+.new_message{
+  display: flex;
 }
