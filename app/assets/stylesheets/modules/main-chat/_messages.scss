@@ -3,12 +3,11 @@
   padding: 45px 40px;
   background-color: #fafafa;
   overflow: scroll;
-}
-
-.message {
+  
+  &__message {
     padding-bottom: 40px;
 
-    &--upper-info {
+    &__upper-info {
       display: flex;
       margin-bottom: 10px;
       
@@ -31,3 +30,6 @@
       margin-bottom: 10px;
     }
   }
+}
+
+
