@@ -6,12 +6,12 @@ class MessagesController < ApplicationController
     @messages = @group.messages.includes(:user)
     @users = @group.users
   end
-
+  
   def create
     @message = @group.messages.new(message_params)
     if @message.save
       respond_to do |format|
-        format.html { redirect_to group_messages_path(@group), notice: 'メッセージが送信されました' }
+        format.html { redirect_to "group_messages_path(params[:group_id])" }
         format.json
       end
     else
