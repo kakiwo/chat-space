@@ -1,6 +1,6 @@
 .account-page {
   .account-page__inner {
-    width: 980px;
+    width: 860px;
     margin: 60px auto;
     padding: 60px;
     background-color: #fff;
@@ -24,6 +24,7 @@
       letter-spacing: 3px;
       font-size: 40px;
       font-weight: 200;
+      color: black;
 
       &:after {
         content: '';
