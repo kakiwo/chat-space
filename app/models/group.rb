@@ -13,7 +13,7 @@ class Group < ApplicationRecord
          '画像が投稿されています'
        end
     else
-      'まだメッセージはありません。'
+      'まだメッセージはありません'
     end
   end
 end
